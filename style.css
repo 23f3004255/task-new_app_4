@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #eef6fb 0%, #cfd9df 100%);
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 1rem 1rem;
+  background: white;
+  box-shadow: 0 4px 12px rgba(80, 106, 243, 0.05);
+}
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1152ca;
+  margin-bottom: .2rem;
+  letter-spacing: 1.5px;
+}
+.subtitle {
+  color: #678;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin: 3rem auto 4rem auto;
+  max-width: 1100px;
+}
+
+.product-card {
+  background: #fff;
+  box-shadow: 0 7px 32px rgba(17,82,202,0.10);
+  border-radius: 22px;
+  text-align: center;
+  width: 260px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1.1rem 1.6rem 1.1rem;
+  position: relative;
+}
+.product-card:hover {
+  transform: translateY(-8px) scale(1.035);
+  box-shadow: 0 14px 44px rgba(17,82,202,0.16);
+}
+.product-card img {
+  width: 85%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 17px;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 2px 12px rgba(42, 64, 194, 0.07);
+}
+.product-card h2 {
+  margin: 0.10rem 0 .3rem 0;
+  font-size: 1.20rem;
+  color: #205dbe;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.product-card .desc {
+  color: #7a8597;
+  font-size: .98rem;
+  min-height: 50px;
+}
+.product-card .price {
+  color: #225dcb;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: .7rem 0 1.10rem 0;
+}
+.buy-btn {
+  background: linear-gradient(92deg,#1c62e9 60%, #91bbff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.03rem;
+  font-weight: 600;
+  padding: 0.65rem 1.7rem;
+  cursor: pointer;
+  outline: none;
+  transition: background .21s, transform .13s;
+  box-shadow: 0 1px 8px #225dcb18;
+}
+.buy-btn:hover {
+  background: linear-gradient(-90deg, #2a74e7 70%, #a5dbff 100%);
+  transform: scale(1.06);
+}
+
+footer {
+  background: #1152ca;
+  color: #fafeff;
+  text-align: center;
+  padding: 1rem 0 0.9rem 0;
+  border-radius: 24px 24px 0 0;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+  }
+  .product-card {
+    width: 94vw;
+    max-width: 390px;
+  }
+}
